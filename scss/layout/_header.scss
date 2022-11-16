@@ -1,0 +1,44 @@
+.hero {
+    margin: 0 100px;
+    width: 75vw;
+    min-height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+
+    h1 {
+        font-size: $sizeH1;
+        width: 35vw;
+    }
+
+    span {
+        color: $primaryColor;
+        font-weight: bold;
+    }
+    
+    .h2-hero {
+        font-size: $sizeH2;
+        font-weight: 400;
+        margin: 0px 0px;
+        
+    }
+    
+    .hero .p-hero {
+        margin-top: 10px;
+        font-size: $sizeParagraph;
+        font-weight: 300;
+    }
+    
+    .imagen-hero {
+        width: 800px;
+        height: 600px;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+    
+    .btn {
+        @extend .btn;
+    }
+
+
+}

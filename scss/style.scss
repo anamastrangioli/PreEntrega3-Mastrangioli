@@ -1,0 +1,854 @@
+@import './base/typo';
+
+@import './base/reset';
+
+@import './utilities/variables';
+
+@import './layout/nav';
+
+@import './layout/header';
+
+@import './components/buttons';
+
+@import './layout/footer';
+
+.caja {
+    width: 100%;
+    height: 400px;
+    background: $backgroundBox;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.caja h2 {
+    color: white;
+    font-size: $sizeH1;
+    padding-top: 20px;
+    padding-left: 80px;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.caja p {
+    color: white;
+    font-weight: 200;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: $sizeParagraph;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
+
+.titulo-proyectos {
+    text-align: center;
+    font-size: $sizeH2;
+    margin-top: 50px;
+}
+
+.divider {
+    width: 50px;
+    height: 5px;
+    background-color: $primaryColor;
+    margin: 0 auto;
+}
+
+.caja-proyectos {
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+
+}
+
+.caja-proyectos h3 {
+    font-size: $sizeH2;
+    padding-left: 200px;
+    padding-top: 100px;   
+}
+
+.caja-proyectos p {
+    padding-left: 200px;
+    font-size: $sizeParagraph;
+}
+
+.caja-proyectos img {
+    height: 500px;
+    justify-content: right;
+    padding-bottom: 50px;
+}
+
+.contenedor-proyecto1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    overflow: hidden;
+}
+
+.contenedor-proyecto2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: center;
+    overflow: hidden;
+}
+
+.caja-proyectos2 h3 {
+    font-size: $sizeH2;
+    padding-left: 200px;
+    padding-top: 100px; 
+}
+
+.caja-proyectos2 p {
+    padding-left: 200px;
+    font-size: $sizeParagraph;
+    
+}
+
+.caja-proyectos2 img {
+    height: 500px;
+    justify-content: right;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.caja-proyectos2:hover img {
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+}
+
+.caja-proyectos:hover img {
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+}
+
+.btn-proyectos {
+    @extend .btn;
+    margin-left: 200px;
+}
+
+.contenedor-contacto {
+    display: flex;
+}
+
+.caja-contacto {
+    display: inline-block;
+    
+}
+
+.caja-contacto h2 {
+    font-size: $sizeH1;
+    padding-left: 200px;
+    padding-top: 50px;
+}
+
+.caja-contacto p {
+    padding-left: 200px;
+    margin-top: 20px;
+}
+
+.caja-contacto img {
+    height: 500px;
+}
+
+.caja-contacto button {
+    @extend .btn;
+}
+
+/*Portfolio*/
+
+.cabecera-portafolio {
+    width: 800px;
+    margin-left: 80px;
+}
+
+.hero-portafolio {
+    display: grid;
+    grid-template-columns: 500px 800px;
+    margin: 0 100px;
+    width: 75vw;
+    min-height: 30vh;
+    align-items: center;
+}
+
+.info-content-portafolio h1 {
+    margin-top: 120px;
+    font-size: 4em;
+}
+
+.cabecera-portafolio {
+    position: absolute;
+    margin-left: 570px;
+    margin-top: -100px;
+    width: 1000px;
+    z-index: 1;
+}
+
+.divider2 {
+    width: 1900px;
+    height: 180px;
+    background-color:$backgroundBox;
+    margin-top: 100px;
+}
+
+.proyectos-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: 80px;
+}
+
+.proyecto-info {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.proyecto-info h2 {
+    font-size: $sizeH2;
+}
+
+.proyecto-info h3 {
+    font-size: $sizeParagraph;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.proyecto-info p {
+    margin-right: 150px;
+    margin-top: 15px;
+}
+
+.p-hero-portafolio {
+    font-size: $sizeParagraph;
+}
+
+.proyecto-imagen {
+    height: 600px;
+    background-image: url(/Img/proyecto-ux.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-portafolio {
+    @extend .btn;
+    width: 150px;
+    padding: 10px;
+}
+
+.proyecto-imagen2 {
+    height: 600px;
+    background-image: url(/Img/proyecto-afip.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.proyectos-content2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.proyectos-content3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.proyecto-imagen3 {
+    height: 600px;
+    background-image: url(/Img/anitadice-mockup.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.proyectos-content4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.proyecto-imagen4 {
+    height: 600px;
+    background-image: url(/Img/JABIMCO-MOCKUP.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.cabecera-conoceme {
+    position: absolute;
+    margin-left: 770px;
+    margin-top: -100px;
+    width: 700px;
+    z-index: 1;
+}
+
+.skills {
+    position: relative;
+    font-size: 10em;
+    color: $backgroundBox;
+    letter-spacing: 40px;
+    z-index: 2;
+    margin-top: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    align-items: center; 
+    padding-top: 60px;
+}
+
+.designer {
+    grid-column: 1/5;
+}
+.designer h2 {
+    color: $TipographyColor;
+    font-size: $sizeH1;
+    padding-top: 0px;
+    padding-left: 0px;
+    justify-content: space-between;
+    margin-left: 180px;
+}
+
+.designer ul {
+    color: $TipographyColor;
+    font-weight: 200;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 1.5em;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-left: 100px;
+    list-style: none;
+       
+}
+
+.coder {
+    grid-column: 6/8;
+    margin-right: 40px;
+}
+
+.coder h2 {
+    color: $TipographyColor;
+    font-size: $sizeH1;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-top: -40px;
+
+}
+.coder ul {
+    color: $TipographyColor;
+    font-weight: 200;
+    font-size: 1.5em;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-left: 0px;
+    list-style: none;
+    
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    align-items: center; 
+    padding-top: 100px;
+}
+
+.datosrandom {
+    grid-column: 1/5;
+}
+
+.datosrandom h2 {
+    color: $primaryColor;
+    font-size: $sizeH1;
+    padding-top: 0px;
+    padding-left: 0px;
+    justify-content: space-between;
+    margin-left: 180px;
+}
+
+.datosrandom ul {
+    color: $TipographyColor;
+    font-weight: 200;
+    padding-left: 100px;
+    padding-right: 80px;
+    font-size: 1.5em;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-left: 100px;
+    line-height: 50px;
+       
+}
+
+.enya {
+    grid-column: 6/8;
+}
+
+.enya img {
+    width: 400px;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    align-items: center; 
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.anamastrangioli {
+    grid-column: 2/4;
+}
+
+.anamastrangioli img {
+    width: 400px;
+}
+
+.sobremi {
+    grid-column: 5/8;
+}
+
+.sobremi p {
+    color: $TipographyColor;
+    font-size: $sizeParagraph;
+    padding-top: 0px;
+    padding-left: 0px;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+
+.herocontacto {
+    margin: 80px 100px;
+    width: 75vw;
+    min-height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    
+}
+
+.herocontacto h1 {
+    font-size: $sizeH1;
+    width: 35vw;
+}
+
+.herocontacto p {
+    margin-top: 10px;
+    font-size: $sizeParagraph;
+    font-weight: 300;
+}
+
+.imagen-herocontacto {
+    position: absolute;
+    margin-left: 650px;
+    margin-top: -150px;
+    width: 700px;
+    z-index: 1;
+}
+
+.divider3 {
+    width: 1900px;
+    height: 180px;
+    background-color:$backgroundBox;
+    margin-top: 100px;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+form h2 {
+    color: $primaryColor;
+    text-align: center;
+    margin: 0;
+    font-size: $sizeH1;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    font-family: 'poppins';
+}
+
+#boton {
+    @extend .btn
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navbar {
+        position: relative;
+        background-color: $primaryColor;
+        z-index: 8;
+    }
+    .navbar .menu-bar {
+        display: block;
+        font-size: $sizeH2;
+        grid-column: 8/9;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .navbar .menu {
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        background-color: $primaryColor;
+        margin-top: 560px;
+        transform: translateX(150%);
+        transition: all 1s;
+    }
+
+    .navbar .menu a {
+        color: #fff;
+    }
+
+    .navbar .menu a:hover {
+        color: #fff
+    }
+
+    .navbar .logo {
+        display: none;
+    }
+
+    .navbar .logomobile {
+        display: block;
+        width: 100px;
+        height: 100px;
+        grid-column: 1/3;
+        margin-left: 30px;
+    }
+
+    .navbar .menu-toggle {
+        transform: translateX(40%);
+
+    }
+
+    .hero {
+        margin-left: 40px;
+        grid-template-columns: 300px 100px;
+    }
+    
+    .hero h1 {
+        font-size: $sizeH2;
+        margin-top: 20px;
+    }
+    
+    .hero .h2-hero {
+        font-size: $sizeParagraph;
+    }
+    
+    .hero .p-hero {
+        font-size: 0.9em;
+    }
+    
+    .hero .imagen-hero {
+        width: 400px;
+        height: 350px;
+        margin-left:-10px;
+        margin-top: 35px;
+    }
+    
+    .hero .btn {
+        font-size: 0.8em;
+        padding: 5px 20px;
+        border-radius: 30px;
+        margin-top: 15px;
+    }
+    
+    .caja {
+        text-align: left;
+        grid-column: span 3;
+        grid-row: span 3;
+        margin: 0;
+    }
+
+    .caja h2 {
+        font-size: $sizeH1;
+        padding-top: 30px;
+    }
+
+    .caja p {
+        font-size: 1.2em;
+        font-weight: 200;
+    }
+    
+    .contenedor-proyecto1 {
+        grid-template-columns: auto;
+    }
+
+    .contenedor-proyecto2 {
+        grid-template-columns: auto;
+    }
+
+    .caja-proyectos h3 {
+        padding-left: 100px;
+        font-size: 2.2em;
+        padding-top: 80px;
+    }
+
+    .caja-proyectos p {
+        padding-left: 100px;
+        font-size: $sizeParagraph;
+    }
+
+    .btn-proyectos {
+        padding: 10px 30px;
+        margin-left: 100px;
+    }
+
+    .caja-proyectos img {
+        height: 380px;
+        justify-content: center;
+        padding: 0;
+        margin-top: -100px;
+        padding-bottom: 0;
+    }
+
+    .titulo-proyectos {
+        font-size: $sizeH2;
+    }
+
+    .caja-proyectos2 h3 {
+        padding-left: 100px;
+        font-size: 2.2em;
+        padding-top: 0;
+    }
+
+    .caja-proyectos2 p {
+        padding-left: 100px;
+        font-size: 1.2em;
+    }
+
+    .btn-proyectos2 {
+        padding: 10px 30px;
+        margin-left: 100px;
+    }
+
+    .caja-proyectos2 img {
+        height: 480px;
+        justify-content: center;
+        padding-top: 60px;
+    }
+
+    .contenedor-contacto {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+    .caja-contacto h2 {
+        font-size: $sizeH2;
+        padding-left: 100px;
+        padding-top: 10px;
+    }
+    
+    .caja-contacto p {
+        padding-left: 100px;
+        margin-top: 20px;
+    }
+    
+    .caja-contacto img {
+        display: none;
+    }
+    
+    .caja-contacto button {
+        margin-top: 20px;
+        margin-left: 100px;
+        margin-bottom: 80px;
+    }
+
+    .hero-portafolio {
+        margin-left: 40px;
+        grid-template-columns: 300px 300px;
+    }
+
+    .cabecera-portafolio {
+        width: 600px;
+        margin-left: 100px;
+        margin-top: 100px;
+        z-index: 4;
+    }
+
+    .info-content-portafolio h1 {
+        margin-top: 80px;
+    }
+    .info-content-portafolio p {
+        width: 400px;
+    }
+    
+    .proyectos-content {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        margin-top: 80px;
+    }
+    
+    .proyecto-info {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 100px;
+    }
+    
+    .proyecto-imagen {
+        height: 300px;
+    }
+
+    .proyectos-content2 {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        margin-top: 80px;
+    }
+        
+    .proyecto-imagen2 {
+        height: 300px;
+        margin-top: 30px;
+    }
+
+    .proyectos-content3 {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        margin-top: 80px;
+    }
+    
+    
+    .proyecto-imagen3 {
+        height: 350px;
+        margin-top: 30px;
+    }
+
+    .proyectos-content4 {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        margin-top: 80px;
+    }
+    
+    .proyecto-imagen4 {
+        height: 350px;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    .hero-portafolio {
+        margin-left: 50px;
+
+    }
+    
+    .hero-portafolio h1 {
+        font-size: 2.2em;
+        margin-top: 50px;
+    }
+    
+     
+    .hero-portafolio p {
+        font-size: 0.9em;
+        margin-top: 20px;
+    }
+    
+    .hero-portafolio .cabecera-conoceme {
+        width: 300px;
+        height: 350px;
+        margin-left: 300px;
+        margin-top: 85px;
+    }
+
+    .skills {
+        font-size: 4em;
+    }
+    
+    .container {
+        display: inline-block;
+    }
+
+    .container h2 {
+        font-size: $sizeH2;
+        padding-top: 30px;
+              
+    }
+
+    .designer h2 {
+        text-align: center;
+        margin-left: 100px;
+    }
+
+    .designer ul li {
+        text-align: center;
+    }
+
+    .coder h2 {
+        text-align: center;
+        margin-left: 100px;
+        padding-top: 100px;
+    }
+
+    .coder ul li {
+        text-align: center;
+        margin-left: 100px;
+        
+    }
+
+    .container2 {
+        display: inline;
+    }
+
+    .container2 h2 {
+        text-align: center;
+        margin-left: 50px;
+        padding-top: 100px;
+    }
+
+    .container2 ul {
+        margin-left: 50px;
+        font-size: 1.1em;
+    }
+
+    .enya img {
+        display: inline;
+        margin-left: 120px;
+        margin-top: 80px;
+    }
+
+    .container3 {
+        display: inline;
+    }
+
+    .container3 img {
+        display: none;
+    }
+   
+    .sobremi {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 80px;
+        margin-right: 40px;
+    }
+
+
+
+}
